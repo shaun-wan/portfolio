@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-primary: #2bbc8a;
+  /* --color-secondary: #d44375; */
+  --color-secondary: #d480aa;
+  --color-sand: #e2e0de;
+
+  --font-sans: 'Menlo', 'sans-serif';
+}
+
+@font-face {
+  font-family: 'Menlo';
+  src: url('/fonts/Menlo-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*     font-family: "Menlo", "Meslo LG", monospace; */

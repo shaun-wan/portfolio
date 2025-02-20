@@ -1,0 +1,92 @@
+---
+import Container from "../ui/Container.astro"
+import TechIcon from './TechIcon.svelte';
+
+// icons from https://www.tech-stack-icons.com/
+import rails from '../../assets/tech/rails.svg';
+import nestjs from '../../assets/tech/nestjs.svg';
+import nodejs from '../../assets/tech/nodejs.svg';
+import java from '../../assets/tech/java.svg';
+import react from '../../assets/tech/react.svg';
+import nextjs from '../../assets/tech/nextjs.svg';
+import svelte from '../../assets/tech/svelte.svg';
+import astro from '../../assets/tech/astro.svg';
+import tailwind from '../../assets/tech/tailwind.svg';
+import postgres from '../../assets/tech/postgres.svg';
+import mysql from '../../assets/tech/mysql.svg';
+import mongodb from '../../assets/tech/mongodb.svg';
+import graphql from '../../assets/tech/graphql.svg';
+import typescript from '../../assets/tech/typescript.svg';
+import aws from '../../assets/tech/aws.svg';
+import docker from '../../assets/tech/docker.svg';
+import swagger from '../../assets/tech/swagger.svg';
+import terraform from '../../assets/tech/terraform.svg';
+
+import railsFill from '../../assets/tech/filled/rails.svg';
+import nestjsFill from '../../assets/tech/filled/nestjs.svg';
+import nodejsFill from '../../assets/tech/filled/nodejs.svg';
+import javaFill from '../../assets/tech/filled/java.svg';
+import reactFill from '../../assets/tech/filled/react.svg';
+import nextjsFill from '../../assets/tech/filled/nextjs.svg';
+import svelteFill from '../../assets/tech/filled/svelte.svg';
+import astroFill from '../../assets/tech/filled/astro.svg';
+import tailwindFill from '../../assets/tech/filled/tailwind.svg';
+import postgresFill from '../../assets/tech/filled/postgres.svg';
+import mysqlFill from '../../assets/tech/filled/mysql.svg';
+import mongodbFill from '../../assets/tech/filled/mongodb.svg';
+import graphqlFill from '../../assets/tech/filled/graphql.svg';
+import typescriptFill from '../../assets/tech/filled/typescript.svg';
+import awsFill from '../../assets/tech/filled/aws.svg';
+import dockerFill from '../../assets/tech/filled/docker.svg';
+import swaggerFill from '../../assets/tech/filled/swagger.svg';
+import terraformFill from '../../assets/tech/filled/terraform.svg';
+---
+
+<Container>
+  <div id="skills" class="w-full flex flex-wrap text-center">
+    <div class="text-primary text-4xl font-bold w-full">Skills</div>
+    <p class="mt-3 w-full">Tools that I am proficient with</p>
+
+    <div class="flex flex-row flex-wrap md:flex-nowrap my-10 md:my-16 items-center w-full">
+      <span class="text-secondary text-2xl w-36 mb-10 md:mb-0">Backend</span>
+      <div class="w-full grid grid-cols-3 md:grid-cols-4 gap-4 gap-y-10">
+        <TechIcon client:visible imageSrc={rails.src} hoverImageSrc={railsFill.src} label="Ruby on Rails" />
+        <TechIcon client:visible imageSrc={nestjs.src} hoverImageSrc={nestjsFill.src} label="Nest.js" />
+        <TechIcon client:visible imageSrc={nodejs.src} hoverImageSrc={nodejsFill.src} label="Node.js" />
+        <TechIcon client:visible imageSrc={java.src} hoverImageSrc={javaFill.src} label="Java" />
+      </div>
+    </div>
+
+    <div class="flex flex-row flex-wrap md:flex-nowrap my-10 md:my-16 items-center w-full">
+      <span class="text-secondary text-2xl w-36 mb-10 md:mb-0">Frontend</span>
+      <div class="w-full grid grid-cols-3 md:grid-cols-4 gap-4 gap-y-10">
+        <TechIcon client:visible imageSrc={react.src} hoverImageSrc={reactFill.src}  label="React.js" />
+        <TechIcon client:visible imageSrc={nextjs.src} hoverImageSrc={nextjsFill.src} label="Next.js" />
+        <TechIcon client:visible imageSrc={svelte.src} hoverImageSrc={svelteFill.src} label="Svelte" />
+        <TechIcon client:visible imageSrc={astro.src} hoverImageSrc={astroFill.src} label="Astro" />
+        <TechIcon client:visible imageSrc={tailwind.src} hoverImageSrc={tailwindFill.src} label="Tailwind Css" />
+      </div>
+    </div>
+
+    <div class="flex flex-row flex-wrap md:flex-nowrap my-10 md:my-16 items-center w-full">
+      <span class="text-secondary text-2xl w-36 mb-10 md:mb-0">Database</span>
+      <div class="w-full grid grid-cols-3 md:grid-cols-4 gap-4 gap-y-10">
+        <TechIcon client:visible imageSrc={postgres.src} hoverImageSrc={postgresFill.src} label="Postgres" />
+        <TechIcon client:visible imageSrc={mysql.src} hoverImageSrc={mysqlFill.src} label="MySql" />
+        <TechIcon client:visible imageSrc={mongodb.src} hoverImageSrc={mongodbFill.src} label="MongoDb" />
+        <TechIcon client:visible imageSrc={graphql.src} hoverImageSrc={graphqlFill.src} label="GraphQL" />
+      </div>
+    </div>
+
+    <div class="flex flex-row flex-wrap md:flex-nowrap my-10 md:my-16 items-center w-full">
+      <span class="text-secondary text-2xl w-36 mb-10 md:mb-0">Others</span>
+      <div class="w-full grid grid-cols-3 md:grid-cols-4 gap-4 gap-y-10">
+        <TechIcon client:visible imageSrc={typescript.src} hoverImageSrc={typescriptFill.src} label="TypeScript" />
+        <TechIcon client:visible imageSrc={aws.src} hoverImageSrc={awsFill.src} label="AWS" />
+        <TechIcon client:visible imageSrc={docker.src} hoverImageSrc={dockerFill.src} label="Docker" />
+        <TechIcon client:visible imageSrc={terraform.src} hoverImageSrc={terraformFill.src} label="Terraform" />
+        <TechIcon client:visible imageSrc={swagger.src} hoverImageSrc={swaggerFill.src} label="Swagger" />
+      </div>
+    </div>
+  </div>
+</Container>

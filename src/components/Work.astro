@@ -1,0 +1,21 @@
+---
+import Container from './ui/Container.astro';
+import airasia from '../assets/companies/airasia.png';
+import xendit from '../assets/companies/xendit.png';
+import univers from '../assets/companies/univers.svg';
+import tnbr from '../assets/companies/tnbr.png';
+---
+<Container >
+  <div id="work" class="my-16 md:my-24 pb-10">
+    <div class="text-center">
+      <div class="text-primary text-4xl font-bold w-full">Work</div>
+      <p class="mt-3 w-full">Companies that I have collabrated with</p>
+    </div>
+    <div class="w-full grid grid-cols-1 md:grid-cols-4 gap-x-16 gap-y-24 justify-items-center items-center mt-10">
+      <img src={airasia.src} height="200" width="200" class="opacity-60" alt="Airasia logo" />
+      <img src={tnbr.src} height="200" width="200" class="opacity-70" alt="Tnbr logo" />
+      <img src={xendit.src} height="200" width="200" class="opacity-70" alt="Xendit logo" />
+      <img src={univers.src} height="200" width="200" class="opacity-70" alt="Univers logo" />
+    </div>
+  </div>
+</Container>

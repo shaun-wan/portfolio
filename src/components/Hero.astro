@@ -1,0 +1,36 @@
+---
+import Container from "./ui/Container.astro"
+---
+<Container>
+  <div id="intro" class="w-full min-h-[95svh] flex flex-row flex-wrap justify-center items-center">
+    <div class="md:px-28 xl:w-4/5 xl:px-36">
+      <span id="welcome-title" class="text-5xl" />
+
+      <div id="intro-description" class="invisible text-base mt-5 w-full transition-opacity duration-700 ease-in opacity-0">
+        <p>I am a <span class="text-primary font-medium">Full Stack Software Engineer</span> from Malaysia.</p>
+        <p class="mt-4 md:mt-1">+10 years of experience. I build scalable web applications for individuals and businesses.</p>
+      </div>
+    </div>
+  </div>
+</Container>
+
+<style is:global>
+  .typed-cursor {
+    font-size: 44px;
+  }
+</style>
+
+<script is:inline src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<script is:inline>
+  var typed = new Typed('#welcome-title', {
+      strings: ['Hello there, I\'m Shaun.'],
+      typeSpeed: 80,
+      cursorBlinking: false,
+      onComplete: (_self) => {
+        const introElem = document.getElementById('intro-description');
+        introElem.classList.remove('invisible');
+        introElem.classList.add('opacity-100');
+      }
+    });
+</script>

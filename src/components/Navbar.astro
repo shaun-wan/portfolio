@@ -1,0 +1,25 @@
+<nav class="text-primary flex justify-center m-6">
+  <div class="mx-5 hover:underline hover:underline-offset-4">
+    <a href="#intro" class="">Intro</a>
+  </div>
+  
+  <div class="mx-5 hover:underline hover:underline-offset-4">
+    <a href="#skills" class="">Skills</a>
+  </div>
+
+  <div class="mx-5 hover:underline hover:underline-offset-4">
+    <a href="#work" class="">Work</a>
+  </div>
+</nav>
+
+<script lang="js">
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+});
+</script>

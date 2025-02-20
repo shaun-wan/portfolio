@@ -1,0 +1,31 @@
+---
+import Container from "./ui/Container.astro";
+import linkedin from "../assets/socials/linkedin.svg";
+import email from "../assets/socials/email.png";
+---
+<Container>
+  <div class="mt-28 pb-10 flex flex-wrap justify-between text-sm">
+    <div>
+      <span class="text-lg">&copy;</span> Shaun Wan 2025
+    </div>
+    <div class="flex items-center">
+      Connect via
+      <span class="ml-2">
+        <a href="https://www.linkedin.com/in/shaun-wan-ba008b9b" target="_blank">
+          <img src={linkedin.src} height="25" width="25" alt="Linkedin"/>
+        </a>
+      </span>
+      <span class="ml-3">
+        <a href="mailto:shaun.wan.cy@gmail.com" target="_blank">
+          <img src={email.src} height="25" width="25" alt="Email"/>
+        </a>
+      </span>
+    </div>
+    <div class="mt-4 md:mt-0">
+      Built with
+      <span class="text-secondary">
+        <a href="https://astro.build/" target="_blank">Astro</a>
+      </span>
+    </div>
+  </div>
+</Container>
